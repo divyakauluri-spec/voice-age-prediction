@@ -283,18 +283,28 @@ with left_col:
     </div>
     """, unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
-
+    
 with right_col:
     if record_btn:
-        with st.spinner(f"🎤 Recording for {duration}s... Speak now!"):
-            recording = sd.rec(int(duration * SR), samplerate=SR, channels=1)
-            sd.wait()
-            sf.write(WAV_PATH, recording.flatten(), SR)
+        uploaded_file = st.file_uploader("Upload a WAV/MP3 file (for cloud) or mic will be used locally", type=["wav", "mp3"])
+        
+        if uploaded_file is not None:
+            with open(WAV_PATH, "wb") as f:
+                f.write(uploaded_file.read())
+            st.success("File uploaded successfully!")
+        else:
+            try:
+                with st.spinner(f"Recording for {duration}s... Speak now!"):
+                    recording = sd.rec(int(duration * SR), samplerate=SR, channels=1)
+                    sd.wait()
+                    sf.write(WAV_PATH, recording.flatten(), SR)
+            except Exception:
+                st.warning("Mic not available. Please upload an audio file above!")
+                st.stop()
 
         with st.spinner("Extracting features..."):
             result = extract_features(WAV_PATH)
             features, y_audio, mel_db = result
-
         if features is not None:
             features_scaled = scaler.transform(features.reshape(1, -1))
             X_tensor = torch.FloatTensor(features_scaled)
