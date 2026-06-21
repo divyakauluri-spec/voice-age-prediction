@@ -12,9 +12,9 @@ import plotly.graph_objects as go
 SR = 16000
 N_MELS = 64
 N_MFCC = 13
-MODEL_PATH = "E:/fest/VoiceAgeProject/best_model_full.pth"
-SCALER_PATH = "E:/fest/VoiceAgeProject/scaler_full.pkl"
-WAV_PATH = "E:/fest/VoiceAgeProject/temp_voice.wav"
+MODEL_PATH = "best_model_full.pth"
+SCALER_PATH = "scaler_full.pkl"
+WAV_PATH = "temp_voice.wav"
 
 st.set_page_config(
     page_title="VoiceAge — Age Prediction from Voice",
