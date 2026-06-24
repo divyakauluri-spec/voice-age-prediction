@@ -30,8 +30,11 @@ Python, PyTorch, Librosa, Streamlit, Plotly, NumPy, Scikit-learn
 Installation:
 bash:
 -git clone https://github.com/divyakauluri-spec/voice-age-prediction.git
+
 -cd voice-age-prediction
+
 -pip install -r requirements.txt
+
 -streamlit run app.py
 
 Future Work:
