@@ -51,7 +51,8 @@ Future Work:
 -Mobile-friendly interface
 
 Author:
+
 Divya Kauluri.
 
 GitHub: @divyakauluri-spec
-LinkedIn: Connect
+LinkedIn: kauluri-divya-131888326
