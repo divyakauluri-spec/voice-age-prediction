@@ -7,6 +7,7 @@ Live Demo
 https://voiceage-predictor.streamlit.app
 
 Features:
+
 -Real-time voice recording and prediction
 -Voice waveform visualization
 -Mel Spectrogram analysis
@@ -28,6 +29,7 @@ Tech Stack
 Python, PyTorch, Librosa, Streamlit, Plotly, NumPy, Scikit-learn
 
 Installation:
+
 bash:
 
 -git clone https://github.com/divyakauluri-spec/voice-age-prediction.git
@@ -41,8 +43,11 @@ bash:
 Future Work:
 
 -Fine-tune with VoxCeleb dataset for exact age prediction
+
 -Add SHAP explainability
+
 -Support audio file upload
+
 -Mobile-friendly interface
 
 Author:
