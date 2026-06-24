@@ -54,5 +54,6 @@ Author:
 
 Divya Kauluri.
 
-GitHub: @divyakauluri-spec
-LinkedIn: kauluri-divya-131888326
+GitHub: https://github.com/divyakauluri-spec
+
+LinkedIn: [kauluri-divya-131888326](https://www.linkedin.com/in/kauluri-divya-131888326/)
