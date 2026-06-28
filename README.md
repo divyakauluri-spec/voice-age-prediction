@@ -34,11 +34,17 @@ Project Structure
 
 voice-age-prediction/
 │
+
 ├── app.py
+
 ├── model/
+
 ├── dataset/
+
 ├── utils/
+
 ├── requirements.txt
+
 └── README.md
 
 Learning Outcomes
