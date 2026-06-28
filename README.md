@@ -32,20 +32,19 @@ https://voiceage-predictor.streamlit.app
 
 Project Structure
 
-voice-age-prediction/
-│
+-voice-age-prediction
 
-├── app.py
+- app.py
 
-├── model/
+- model
 
-├── dataset/
+- dataset
 
-├── utils/
+- utils
 
-├── requirements.txt
+- requirements.txt
 
-└── README.md
+-README.md
 
 Learning Outcomes
 
