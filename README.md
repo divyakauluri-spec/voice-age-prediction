@@ -1,59 +1,66 @@
-VoiceAge — Age Prediction from Voice
- Age prediction from voice using CNN Deep Learning
+Voice Age Prediction
 
 Overview
- VoiceAge is a deep learning project that predicts a person's age from their voice. It uses a CNN architecture trained on the Mozilla Common Voice dataset with 43,737 audio samples.
+
+Voice Age Prediction is a deep learning application that estimates a person's age from their voice. The project uses audio processing techniques and machine learning to analyze speech features and provide age predictions through an interactive Streamlit web application.
+
+Problem Statement
+
+Estimating age from voice has applications in speech analytics, virtual assistants, customer service, and human-computer interaction. This project demonstrates how machine learning can extract meaningful patterns from audio signals to predict age.
+
+Features
+
+- Upload audio files for prediction
+- Real-time age prediction
+- Interactive Streamlit interface
+- Clean and responsive UI
+- Machine Learning based prediction
+
+Technologies Used
+
+- Python
+- TensorFlow / Keras
+- Librosa
+- NumPy
+- Pandas
+- Streamlit
+- Scikit-learn
+
 Live Demo
+
 https://voiceage-predictor.streamlit.app
 
-Features:
+Project Structure
 
--Real-time voice recording and prediction
--Voice waveform visualization
--Mel Spectrogram analysis
--Feature influence chart for explainability
--Gender-aware prediction
--Confidence score with age range
+voice-age-prediction/
+│
+├── app.py
+├── model/
+├── dataset/
+├── utils/
+├── requirements.txt
+└── README.md
 
-Model Architecture:
+Learning Outcomes
 
-Type: CNN (Convolutional Neural Network)
-Input: 185 audio features
-Features: Log-Mel Spectrograms, MFCCs, Delta MFCCs, Pitch (F0), Speaking Rate
-Loss Function: MAE (Mean Absolute Error)
-Best MAE: 9.17 years
-Training Samples: 43,737
+-Audio preprocessing
+-Feature extraction
+-Deep Learning workflows
+-Model deployment using Streamlit
+-End-to-end Machine Learning pipeline
 
-Tech Stack
+Future Improvements
 
-Python, PyTorch, Librosa, Streamlit, Plotly, NumPy, Scikit-learn
+-Support multiple languages
+-Improve prediction accuracy
+-Deploy using Docker
+-Real-time microphone input
+-Better visualization of predictions
 
-Installation:
+Author
 
-bash:
+Divya Kauluri
 
--git clone https://github.com/divyakauluri-spec/voice-age-prediction.git
-
--cd voice-age-prediction
-
--pip install -r requirements.txt
-
--streamlit run app.py
-
-Future Work:
-
--Fine-tune with VoxCeleb dataset for exact age prediction
-
--Add SHAP explainability
-
--Support audio file upload
-
--Mobile-friendly interface
-
-Author:
-
-Divya Kauluri.
+B.Tech CSE (Data Science)
 
 GitHub: https://github.com/divyakauluri-spec
-
-LinkedIn: [kauluri-divya-131888326](https://www.linkedin.com/in/kauluri-divya-131888326/)
